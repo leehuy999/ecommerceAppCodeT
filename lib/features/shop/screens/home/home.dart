@@ -6,6 +6,8 @@ import 'package:ecommerceappcodoet/common/widgets/custom_shapes/containers/circu
 import 'package:ecommerceappcodoet/common/widgets/custom_shapes/containers/primar_header_container.dart';
 import 'package:ecommerceappcodoet/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:ecommerceappcodoet/common/widgets/images/t_rounded_images.dart';
+import 'package:ecommerceappcodoet/common/widgets/layouts/grid_layout.dart';
+import 'package:ecommerceappcodoet/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:ecommerceappcodoet/common/widgets/texts/section_heading.dart';
 import 'package:ecommerceappcodoet/features/shop/screens/home/home.dart';
 import 'package:ecommerceappcodoet/features/shop/screens/home/widget/home_appbar.dart';
@@ -58,7 +60,20 @@ class HomeScreen extends StatelessWidget {
             ///Body
             Padding(
               padding: const EdgeInsets.all(TSize.defaultSpace),
-              child: TPromoSlider(banner: [TImages.promoBaner1,TImages.promoBaner2,TImages.promoBaner3],)
+              child: Column(
+                children: [
+                  /// Promo Slider
+                  const TPromoSlider(banner: [TImages.promoBaner1,TImages.promoBaner2,TImages.promoBaner3],),
+                  const SizedBox(height: TSize.spaceBtwSections,),
+
+                  ///Heading
+                   TSectionHeading(title: 'Popular Products', onPressed: (){},),
+                  const SizedBox(height: TSize.spaceBtwItems,),
+                  ///Popular product  ssss
+                  /// chế độ xem lưới
+                  GridLayout(itemCount: 4, itemBuilder: (_, index) => const TProductCardVertical(),)
+                ],
+              )
             )
           ],
         ),
@@ -66,6 +81,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
 
 
 

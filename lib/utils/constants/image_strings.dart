@@ -37,4 +37,19 @@ class TImages {
   static const String promoBaner1 = "assets/images/banners/jacket.jpg";
   static const String promoBaner2 = "assets/images/banners/vn-11134207-7r98o-lnlrs3skmwl61a.jpg";
   static const String promoBaner3 = "assets/images/banners/vn-11134207-7r98o-lnlrs3skob5m0b.jpg";
+
+  //Product
+  static const String productImage1 = "assets/images/products/adidas1.jpg";
+  static const String productImage2 = "assets/images/products/adidas3.webp";
+  static const String productImage3 = "assets/images/products/adidas4.jpg";
+  static const String productImage4 = "assets/images/products/adidas5.jpg";
+  static const String productImage5 = "assets/images/products/iphone11.jpg";
+  static const String productImage6 = "assets/images/products/iphone 13.jpg";
+  static const String productImage7 = "assets/images/products/iphone 14.jpg";
+  static const String productImage8 = "assets/images/products/laptop1.jpg";
+  static const String productImage9 = "assets/images/products/laptop3.jpg";
+  static const String productImage10 = "assets/images/products/laptop4.jpg";
+  static const String productImage11 = "assets/images/products/laptop5.jpg";
+  static const String productImage12 = "assets/images/products/latop2.jpg";
+  static const String productImage13 = "";
 }
