@@ -1,3 +1,4 @@
+import 'package:ecommerceappcodoet/features/authencation/screens/login/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -27,7 +28,7 @@ class OnBoardingController extends GetxController {
   // update current index & jump to next page
   void nextPage() {
     if(currentPageIndex.value ==2) {
-      // Get.to(Logíncreen());
+      Get.off(LoginScreen());/// get off xóa mọi màn hình trước đó
     } else {
       int page = currentPageIndex.value +1;
       pageController.jumpToPage(page);
