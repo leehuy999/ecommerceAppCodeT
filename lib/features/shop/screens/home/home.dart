@@ -71,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: TSize.spaceBtwItems,),
                   ///Popular product  ssss
                   /// chế độ xem lưới
-                  GridLayout(itemCount: 4, itemBuilder: (_, index) => const TProductCardVertical(),)
+                  TGridLayout(itemCount: 4, itemBuilder: (_, index) => const TProductCardVertical(),)
                 ],
               )
             )

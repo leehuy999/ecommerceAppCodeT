@@ -1,7 +1,7 @@
-import 'package:ecommerceappcodoet/features/authencation/screens.onboarding/onboarding.dart';
 import 'package:ecommerceappcodoet/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'features/authencation/screens/onboarding/onboarding.dart';
 
 // use this class to setup theme , initial Bindings, any aimation and much more using
 class App extends StatelessWidget {

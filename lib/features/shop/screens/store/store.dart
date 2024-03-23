@@ -4,11 +4,15 @@ import 'package:ecommerceappcodoet/common/widgets/custom_shapes/containers/t_rou
 import 'package:ecommerceappcodoet/common/widgets/images/t_circular_image.dart';
 import 'package:ecommerceappcodoet/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:ecommerceappcodoet/common/widgets/texts/section_heading.dart';
+import 'package:ecommerceappcodoet/common/widgets/texts/t_brand_titile_text_with_icon.dart';
 import 'package:ecommerceappcodoet/utils/constants/colors.dart';
+import 'package:ecommerceappcodoet/utils/constants/enums.dart';
 import 'package:ecommerceappcodoet/utils/constants/image_strings.dart';
 import 'package:ecommerceappcodoet/utils/constants/size.dart';
 import 'package:ecommerceappcodoet/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../common/widgets/layouts/grid_layout.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -48,17 +52,46 @@ class StoreScreen extends StatelessWidget {
                 ///Featured Brands
                 TSectionHeading(title: 'Featured Brands', onPressed: () {},),
                 const SizedBox(height: TSize.spaceBtwItems / 1.5),
-                TRoundedContainer(
-                  padding: const EdgeInsets.all(TSize.sm),
-                  showBorder: true,
-                  backgroundColor: Colors.transparent,
-                  child: Row(
-                    children: [
-                      ///Icon
-                      TCirculmage(image: '',)
-                    ],
-                  ),
-                )
+                // tạo grid view cho số sản phẩm
+                TGridLayout(itemCount: 4,mainAxisExtent: 80, itemBuilder: (_,index){
+                  return GestureDetector(
+                    onTap: () {},
+                    child: TRoundedContainer(
+                      padding: const EdgeInsets.all(TSize.sm),
+                      showBorder: true,
+                      backgroundColor: Colors.transparent,
+                      child: Row(
+                        children: [
+                          ///Icon
+                          /// Flexible là tiện ích linh hoạt sẽ điều chỉnh không gian phù hợp
+                          Flexible(
+                            child: TCircularmage(isNetworkImage: false,
+                              image: TImages.clotheIcon,
+                              backgroundColor: Colors.transparent,
+                              overlayColor: THelperFunctions.isDarkMode(context)? TColors.white : TColors.black,),
+                          ),
+                          const SizedBox(width: TSize.spaceBtwItems/2,),
+
+                          ///Text
+                          Expanded(
+                            child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                              // tao kich thuoc truy cap xuong muc toi thieu
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const TBrandTitleWithVerifiedIcon(title: 'Nike',
+                                  brandTextSize: TextSizes.large,),
+                                Text('256 product',
+                                  // phần tràn văn bản là elip
+                                  overflow: TextOverflow.ellipsis,
+                                  style: Theme.of(context).textTheme.labelMedium,),
+                            
+                              ],),
+                          )
+                        ],
+                      ),
+                    ),
+                  )
+                },)
 
               ],
             ),

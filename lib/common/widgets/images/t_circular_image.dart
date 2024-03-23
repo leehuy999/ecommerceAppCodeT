@@ -4,8 +4,8 @@ import 'package:ecommerceappcodoet/utils/constants/size.dart';
 import 'package:ecommerceappcodoet/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class TCirculmage extends StatelessWidget {
-  const TCirculmage({
+class TCircularmage extends StatelessWidget {
+  const TCircularmage({
     super.key,
     this.fit = BoxFit.cover,
     required this.image,

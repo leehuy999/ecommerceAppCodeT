@@ -2,8 +2,8 @@ import 'package:ecommerceappcodoet/utils/constants/size.dart';
 import 'package:flutter/material.dart';
 
 ///tạo hiển thị dạng lưới
-class GridLayout extends StatelessWidget {
-  const GridLayout({
+class TGridLayout extends StatelessWidget {
+  const TGridLayout({
     super.key,
     required this.itemCount,
     this.mainAxisExtent = 288,

@@ -6,6 +6,7 @@ import 'package:ecommerceappcodoet/common/widgets/icons/t_circular_icon.dart';
 import 'package:ecommerceappcodoet/common/widgets/images/t_rounded_images.dart';
 import 'package:ecommerceappcodoet/common/widgets/texts/product_price_text.dart';
 import 'package:ecommerceappcodoet/common/widgets/texts/product_title_text.dart';
+import 'package:ecommerceappcodoet/common/widgets/texts/t_brand_titile_text_with_icon.dart';
 import 'package:ecommerceappcodoet/utils/constants/colors.dart';
 import 'package:ecommerceappcodoet/utils/constants/image_strings.dart';
 import 'package:ecommerceappcodoet/utils/constants/size.dart';
@@ -91,26 +92,7 @@ class TProductCardVertical extends StatelessWidget {
                   const SizedBox(
                     height: TSize.spaceBtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        "Nike",
-                        //Nó được sử dụng để xác định khi nào Text sẽ không vừa với không gian có sẵn. Nó có nghĩa là chúng ta đã chỉ định nhiều Text hơn không gian có sẵn.
-                        overflow: TextOverflow.ellipsis,
-                        //Nó được sử dụng để xác định số dòng tối đa được hiển thị trong widget Text.
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(
-                        width: TSize.xs,
-                      ),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: TColors.primary,
-                        size: TSize.xs,
-                      )
-                    ],
-                  ),
+                 TBrandTitleWithVerifiedIcon(title: 'Nike',)
                 ],
               ),
             ),

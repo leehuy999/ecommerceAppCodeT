@@ -1,5 +1,6 @@
 // LIST OF ENUMS
 //  They cannot be created inside a class.
+/// enum là một phương thức  dùng để so sánh
 
 enum TextSizes { small, medium, large}
 
