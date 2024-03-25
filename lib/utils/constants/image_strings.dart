@@ -38,6 +38,9 @@ class TImages {
   static const String promoBaner2 = "assets/images/banners/vn-11134207-7r98o-lnlrs3skmwl61a.jpg";
   static const String promoBaner3 = "assets/images/banners/vn-11134207-7r98o-lnlrs3skob5m0b.jpg";
 
+  //User
+  static const String user = 'assets/images/user/6759dab67081a5ed6dc0bf74e4f5f363.jpg';
+
   //Product
   static const String productImage1 = "assets/images/products/adidas1.jpg";
   static const String productImage2 = "assets/images/products/adidas3.webp";
