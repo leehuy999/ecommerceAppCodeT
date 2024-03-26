@@ -50,6 +50,7 @@ dependencies:
   #Product Specific
   readmore: ^2.2.0
   carousel_slider: ^4.2.1
+  flutter_rating_bar: ^4.0.1
 
 
 dev_dependencies:
@@ -77,11 +78,12 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/logos/
-    - assets/icons/brand/
+    - assets/images/banners/
     - assets/images/on_boarding_images/
     - assets/icons/categories/
-    - assets/icons/user/
-    - assets/icons/products/
+    - assets/images/user/
+    - assets/images/products/
+    - assets/images/reviews/
     - assets/images/animations/
     - assets/images/banners/
 

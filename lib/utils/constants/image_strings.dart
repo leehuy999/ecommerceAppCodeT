@@ -10,7 +10,7 @@ class TImages {
   static const String facebook = "assets/logos/icon_facebook.png";
 
   //Onboarding images
-  static const String onBoardingImage1 = "assets/images/on_boarding_images/sammy-line-searching.giff";
+  static const String onBoardingImage1 = "assets/images/on_boarding_images/sammy-line-searching.gif";
   static const String onBoardingImage2 = "assets/images/on_boarding_images/sammy-line-shopping.gif";
   static const String onBoardingImage3 = "assets/images/on_boarding_images/sammy-line-delivering.gif";
 
@@ -37,6 +37,11 @@ class TImages {
   static const String promoBaner1 = "assets/images/banners/jacket.jpg";
   static const String promoBaner2 = "assets/images/banners/vn-11134207-7r98o-lnlrs3skmwl61a.jpg";
   static const String promoBaner3 = "assets/images/banners/vn-11134207-7r98o-lnlrs3skob5m0b.jpg";
+
+  //Product reviews
+  static const String userProfileImage1 = "assets/images/reviews/hinh-nen-ngo-nghinh-anh-meo-cute-nupet-12.jpg";
+  static const String userProfileImage2 = "assets/images/reviews/pngtree-cute-cat-cartoon-character-png-image_13344212.png";
+  static const String userProfileImage3 = "assets/images/reviews/pngtree-cute-kitty-cat-laying-down-cartoon-element-png-image_11643507.png";
 
   //User
   static const String user = 'assets/images/user/6759dab67081a5ed6dc0bf74e4f5f363.jpg';

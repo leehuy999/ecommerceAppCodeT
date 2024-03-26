@@ -3,6 +3,7 @@ import 'package:ecommerceappcodoet/common/widgets/custom_shapes/curved_edges/cur
 import 'package:ecommerceappcodoet/common/widgets/icons/t_circular_icon.dart';
 import 'package:ecommerceappcodoet/common/widgets/images/t_rounded_images.dart';
 import 'package:ecommerceappcodoet/common/widgets/texts/section_heading.dart';
+import 'package:ecommerceappcodoet/features/shop/screens/product_details/widgets/bottom_add_to_cart_widget.dart';
 import 'package:ecommerceappcodoet/features/shop/screens/product_details/widgets/prodcut_detail_image_slider.dart';
 import 'package:ecommerceappcodoet/features/shop/screens/product_details/widgets/product_attributes.dart';
 import 'package:ecommerceappcodoet/features/shop/screens/product_details/widgets/product_meta_data.dart';
@@ -22,6 +23,7 @@ class ProductDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
+      bottomNavigationBar: TBottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
