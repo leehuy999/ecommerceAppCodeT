@@ -32,7 +32,7 @@ class THomeAppBar extends StatelessWidget {
       ),
       action: [
         ///action  tạo giỏ hàng và số lượng giỏ hàng bằng stack xếp chồng
-        TCounterIcon(onPressed: () { }, iconColor: TColors.white,)
+        TCounterIcon(onPressed: () { }, iconColor: TColors.white,counterBgColor: TColors.black,)
       ],
     );
   }

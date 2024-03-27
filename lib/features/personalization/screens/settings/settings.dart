@@ -1,6 +1,7 @@
 import 'package:ecommerceappcodoet/common/widgets/appbar/appbar.dart';
 import 'package:ecommerceappcodoet/common/widgets/images/t_circular_image.dart';
 import 'package:ecommerceappcodoet/common/widgets/list_tiles/setting_menu_tile.dart';
+import 'package:ecommerceappcodoet/features/personalization/screens/address/address.dart';
 import 'package:ecommerceappcodoet/features/personalization/screens/profile/profile.dart';
 import 'package:ecommerceappcodoet/utils/constants/colors.dart';
 import 'package:ecommerceappcodoet/utils/constants/size.dart';
@@ -65,7 +66,8 @@ class SettingScreen extends StatelessWidget {
                   TSettingMenuTitle(
                       icon: Iconsax.safe_home,
                       subTitle: 'My Addreses',
-                      title: 'Set shopping delivery address'),
+                      title: 'Set shopping delivery address',
+                      onTap: () => Get.to(()=>UserAddressScreem()),),
                   TSettingMenuTitle(
                       icon: Iconsax.shopping_cart,
                       subTitle: 'My Cart',
