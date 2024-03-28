@@ -12,6 +12,7 @@ import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/products/cart/cart_items.dart';
 import '../../../../common/widgets/products/cart/cart_remove_button.dart';
+import '../../../../common/widgets/texts/product_price_text.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -25,38 +26,54 @@ class CartScreen extends StatelessWidget {
             'Cart',
             style: Theme.of(context).textTheme.headlineSmall,
           )),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(TSize.defaultSpace),
+      body: Padding(
+        padding: const EdgeInsets.all(TSize.defaultSpace),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(TSize.defaultSpace),
 
-          /// tạo danh sách hiển thị
-          child: ListView.separated(
-              shrinkWrap: true, // thu nhỏh
-              separatorBuilder: (_, __) => const SizedBox(
-                    height: TSize.spaceBtwSections,
-                  ),
-              itemCount: 4,
+            /// tạo danh sách hiển thị
+            child: ListView.separated(
+                shrinkWrap: true, // thu nhỏh
+                separatorBuilder: (_, __) => const SizedBox(
+                      height: TSize.spaceBtwSections,
+                    ),
+                itemCount: 10,
 
-              /// trình tạo mục k dùng ngữ cảnh
-              itemBuilder: (_, index) => Column(
-                    children: [
-                      const TCartItem(),
-                      const SizedBox(
-                        height: TSize.spaceBtwItems,
-                      ),
-                      Row(
-                        children: [
-                          const SizedBox(
-                            width: 70,
-                          ),
+                /// trình tạo mục k dùng ngữ cảnh
+                itemBuilder: (_, index) => Column(
+                      children: [
+                        const TCartItem(),
+                        const SizedBox(
+                          height: TSize.spaceBtwItems,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                //exta space
+                                const SizedBox(
+                                  width: 70,
+                                ),
 
-                          /// Add Remove button
-                          TProductQuanityWithAddRemove()
-                        ],
-                      )
-                    ],
-                  )),
+                                /// Add Remove button
+                                TProductQuanityWithAddRemove()
+                              ],
+                            ),
+                            ///product titlt pricec
+                            TProductPriceText(price: "256"),
+                          ],
+                        )
+                      ],
+                    )),
+          ),
         ),
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(TSize.defaultSpace),
+        child: ElevatedButton(onPressed:  (){},
+        child: Text('Checkout \$ 256'),),
       ),
     );
   }
