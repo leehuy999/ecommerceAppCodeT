@@ -34,7 +34,7 @@ class TTextFieldTheme {
   );
 
   static InputDecorationTheme darkTextFieldTheme = InputDecorationTheme(
-    errorMaxLines: 3,
+    errorMaxLines: 2,
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
     labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.white),

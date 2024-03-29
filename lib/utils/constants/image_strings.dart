@@ -43,6 +43,17 @@ class TImages {
   static const String userProfileImage2 = "assets/images/reviews/pngtree-cute-cat-cartoon-character-png-image_13344212.png";
   static const String userProfileImage3 = "assets/images/reviews/pngtree-cute-kitty-cat-laying-down-cartoon-element-png-image_11643507.png";
 
+  //Payment Methor
+  static const String applePay = 'assets/icons/payment_method/icons8-apple-pay-64.png';
+  static const String googlePay = 'assets/icons/payment_method/icons8-google-48.png';
+  static const String creditCard = 'assets/icons/payment_method/icons8-credit-card-94.png';
+  static const String masterCard = 'assets/icons/payment_method/icons8-mastercard-48.png';
+  static const String paypal = 'assets/icons/payment_method/icons8-paypal-48.png';
+  static const String visa = 'assets/icons/payment_method/icons8-visa-48.png';
+  static const String paystack = 'assets/icons/payment_method/icons8-payback-48.png';
+  static const String paysm  = 'assets/icons/payment_method/icons8-paytm-188.png';
+  static const String surcessfulIcon = 'assets/icons/payment_method/icons8-good-pincode-40.png';
+
   //User
   static const String user = 'assets/images/user/6759dab67081a5ed6dc0bf74e4f5f363.jpg';
 

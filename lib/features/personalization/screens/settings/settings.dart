@@ -3,6 +3,7 @@ import 'package:ecommerceappcodoet/common/widgets/images/t_circular_image.dart';
 import 'package:ecommerceappcodoet/common/widgets/list_tiles/setting_menu_tile.dart';
 import 'package:ecommerceappcodoet/features/personalization/screens/address/address.dart';
 import 'package:ecommerceappcodoet/features/personalization/screens/profile/profile.dart';
+import 'package:ecommerceappcodoet/features/shop/screens/order/order.dart';
 import 'package:ecommerceappcodoet/utils/constants/colors.dart';
 import 'package:ecommerceappcodoet/utils/constants/size.dart';
 import 'package:flutter/material.dart';
@@ -75,7 +76,8 @@ class SettingScreen extends StatelessWidget {
                   TSettingMenuTitle(
                       icon: Iconsax.bag_tick,
                       subTitle: 'My Orders',
-                      title: 'In-progress and Completed Orders'),
+                      title: 'In-progress and Completed Orders',
+                  onTap: () => Get.to(()=> const OrderScreen()),),
                   TSettingMenuTitle(
                       icon: Iconsax.bank,
                       subTitle: 'Bank Account',
