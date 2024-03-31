@@ -107,6 +107,9 @@ class TProductCardVertical extends StatelessWidget {
               children: [
                 ///price
                 TProductPriceText( price: '35.0',),
+
+
+                ///add to cart
                 Container(
                   decoration: const BoxDecoration(
                     color: TColors.dark,

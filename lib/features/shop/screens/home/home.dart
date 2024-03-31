@@ -9,6 +9,7 @@ import 'package:ecommerceappcodoet/common/widgets/images/t_rounded_images.dart';
 import 'package:ecommerceappcodoet/common/widgets/layouts/grid_layout.dart';
 import 'package:ecommerceappcodoet/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:ecommerceappcodoet/common/widgets/texts/section_heading.dart';
+import 'package:ecommerceappcodoet/features/personalization/screens/all_products/all_products.dart';
 import 'package:ecommerceappcodoet/features/shop/screens/home/home.dart';
 import 'package:ecommerceappcodoet/features/shop/screens/home/widget/home_appbar.dart';
 import 'package:ecommerceappcodoet/features/shop/screens/home/widget/home_categorie.dart';
@@ -18,6 +19,7 @@ import 'package:ecommerceappcodoet/utils/constants/image_strings.dart';
 import 'package:ecommerceappcodoet/utils/constants/size.dart';
 import 'package:ecommerceappcodoet/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -68,7 +70,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: TSize.spaceBtwSections,),
 
                   ///Heading
-                   TSectionHeading(title: 'Popular Products', onPressed: (){},),
+                   TSectionHeading(title: 'Popular Products', onPressed: () => Get.to(()=> const AllProducts()),),
                   const SizedBox(height: TSize.spaceBtwItems,),
                   ///Popular product  ssss
                   /// chế độ xem lưới

@@ -30,7 +30,7 @@ class OnBoardingScreen extends StatelessWidget {
             controller: controller.pageController,
             // sử dụng chỉ báo trang cập nhật của bộ điều khiển
             onPageChanged: controller.updatePageIndicator,
-            children: [
+            children: const [
               //Harizatal Scrollable Pages
               OnBoardingPages(
                 images: TImages.onBoardingImage1,
@@ -49,11 +49,11 @@ class OnBoardingScreen extends StatelessWidget {
               ),
 
               //Skips Button
-              const OnBoardingSkip(),
+              OnBoardingSkip(),
 
               //Dot Navigation SmoothPageIndicator
               // điều hướng dấu chấm mượt mà
-              const OnBoardingDotNavigation(),
+              OnBoardingDotNavigation(),
 
               // Circular Button (nút vòng tròn next pages)
               OnBoardingNextButton()

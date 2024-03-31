@@ -19,7 +19,7 @@ class OnBoardingController extends GetxController {
   //Jump to the specific dot selected page
   // điều hướng dấu chấm
   void dotNavigationClick(index) {
-    // trang hiện tại bằng trang đang mở
+    // trang hiện tại bằng tran g đang mở
     currentPageIndex.value = index;
     //chuyển chỉ mục sang trang hiện tại
     pageController.jumpTo(index);

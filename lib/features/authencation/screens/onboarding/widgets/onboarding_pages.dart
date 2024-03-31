@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 class OnBoardingPages extends StatelessWidget {
   const OnBoardingPages(
       {super.key,
-        required this.images,
-        required this.title,
-        required this.subTitle});
+      required this.images,
+      required this.title,
+      required this.subTitle});
 
   final String images, title, subTitle;
 
@@ -20,9 +20,9 @@ class OnBoardingPages extends StatelessWidget {
         Column(
           children: [
             Image(
-              width: THelperFunctions.screenWidth() * 0.8,
-              height: THelperFunctions.screenHeight() * 0.6,
-              image: const AssetImage(TImages.onBoardingImage1),
+              width: THelperFunctions.screenWidth() * 0.6,
+              height: THelperFunctions.screenHeight() * 0.4,
+              image: AssetImage(images),
             ),
             Text(
               title,

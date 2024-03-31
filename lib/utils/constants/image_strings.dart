@@ -10,8 +10,8 @@ class TImages {
   static const String facebook = "assets/logos/icon_facebook.png";
 
   //Onboarding images
-  static const String onBoardingImage1 = "assets/images/on_boarding_images/sammy-line-searching.gif";
-  static const String onBoardingImage2 = "assets/images/on_boarding_images/sammy-line-shopping.gif";
+  static const String onBoardingImage1 = "assets/images/on_boarding_images/sammy-line-shopping.gif";
+  static const String onBoardingImage2 = "assets/images/on_boarding_images/sammy-line-searching.gif";
   static const String onBoardingImage3 = "assets/images/on_boarding_images/sammy-line-delivering.gif";
 
   //Animations
@@ -24,8 +24,8 @@ class TImages {
 
   // Categories
   static const String sportIcon = "assets/icons/categories/icons8-bowling-50.png ";
-  static const String clotheIcon = "assets/icons/categories/icons8-school-uniform-64.png ";
-  static const String shoeIcon = "assets/icons/categories/icons8-shoe-50.png ";
+  static const String clotheIcon = "assets/icons/categories/icons8-school-uniform-64.png";
+  static const String shoeIcon = "assets/icons/categories/icons8-shoe-50.png";
   static const String cometicIcon = "assets/icons/categories/icons8-cosmetic-64.png";
   static const String animalIcon = "assets/icons/categories/icons8-dog-heart-64.png ";
   static const String toyIcon = "assets/icons/categories/icons8-wooden-toy-car-64.png ";

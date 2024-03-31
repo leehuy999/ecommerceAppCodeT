@@ -20,14 +20,14 @@ class TCustomCurvedEdges extends CustomClipper<Path> {
     final secondFirstCurve = Offset(0, size.height -20);
     // kết thúc x = width -30 ( bỏ chừa lại  30),y=-20
     final secondLastCurve = Offset(size.width-30, size.height -20);
-    path.quadraticBezierTo(firstCurve.dx, firstCurve.dy, lastCurve.dx, lastCurve.dy);
+    path.quadraticBezierTo(secondFirstCurve.dx, secondFirstCurve.dy, secondLastCurve.dx, secondLastCurve.dy);
 
     // đường cong thứ 3
     // bắt đầu từ x=width -30 ,y=-20
-    final thirdFirstCurve = Offset(size.width-30, size.height -20);
+    final thirdFirstCurve = Offset(size.width, size.height -20);
     // kết thúc x = width ,y= height
     final thirdLastCurve = Offset(size.width, size.height );
-    path.quadraticBezierTo(firstCurve.dx, firstCurve.dy, lastCurve.dx, lastCurve.dy);
+    path.quadraticBezierTo(thirdFirstCurve.dx, thirdFirstCurve.dy, thirdLastCurve.dx, thirdLastCurve.dy);
 
     /// tại điểm kết thúc khi điểm  x= chiều rộng , y = 0  kết thúc điểm vẽ
     path.lineTo(size.width, 0);

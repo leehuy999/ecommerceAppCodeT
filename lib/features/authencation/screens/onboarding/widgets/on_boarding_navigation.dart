@@ -17,14 +17,17 @@ class OnBoardingDotNavigation extends StatelessWidget {
     final controller = OnBoardingController.instance;
     final dark = THelperFunctions.isDarkMode(context);
     return Positioned(
-      bottom: TDeviceUtils.getBottomNavigationBarHeight() +25,
-      left: TSize.defaultSpace,
+        bottom: TDeviceUtils.getBottomNavigationBarHeight() + 25,
+        left: TSize.defaultSpace,
         // chỉ báo trang
-      child: SmoothPageIndicator(controller: controller.pageController,
+        child: SmoothPageIndicator(
+          controller: controller.pageController,
           onDotClicked: controller.dotNavigationClick,
-           count: 3,
-        // hiệu ứng màu chuyển đổi theo cài đặt sáng tối
-        effect: ExpandingDotsEffect(activeDotColor: dark ? TColors.light: TColors.dark,dotHeight: 6),)
-    );
+          count: 3,
+          // hiệu ứng màu chuyển đổi theo cài đặt sáng tối
+          effect: ExpandingDotsEffect(
+              activeDotColor: dark ? TColors.light : TColors.dark,
+              dotHeight: 6),
+        ));
   }
 }
