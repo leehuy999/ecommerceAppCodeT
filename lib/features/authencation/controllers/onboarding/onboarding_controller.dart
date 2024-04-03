@@ -1,6 +1,8 @@
 import 'package:ecommerceappcodoet/features/authencation/screens/login/login.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
@@ -28,6 +30,17 @@ class OnBoardingController extends GetxController {
   // update current index & jump to next page
   void nextPage() {
     if(currentPageIndex.value ==2) {
+      /// gọi biến cục bộ để nhận biết có phải lần đầu đăng nhập không
+      final storage = GetStorage();
+
+      // /// chế độ gỡ lỗi
+      // if(kDebugMode){
+      //   print('================ GET STORAGE next button==================');
+      //   print(storage.read('IsFirstTime'));
+      // }
+      //
+      //
+      // storage.write('IsFirstTime', false);
       Get.off(LoginScreen());/// get off xóa mọi màn hình trước đó
     } else {
       int page = currentPageIndex.value +1;

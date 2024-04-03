@@ -1,4 +1,4 @@
-import 'package:ecommerceappcodoet/features/authencation/controllers/onboarding_controller.dart';
+import 'package:ecommerceappcodoet/features/authencation/controllers/onboarding/onboarding_controller.dart';
 import 'package:ecommerceappcodoet/utils/constants/size.dart';
 import 'package:ecommerceappcodoet/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';

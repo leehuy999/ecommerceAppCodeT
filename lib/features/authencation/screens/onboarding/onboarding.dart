@@ -1,4 +1,4 @@
-import 'package:ecommerceappcodoet/features/authencation/controllers/onboarding_controller.dart';
+import 'package:ecommerceappcodoet/features/authencation/controllers/onboarding/onboarding_controller.dart';
 import 'package:ecommerceappcodoet/features/authencation/screens/onboarding/widgets/on_boarding_navigation.dart';
 import 'package:ecommerceappcodoet/features/authencation/screens/onboarding/widgets/on_boarding_next_button.dart';
 import 'package:ecommerceappcodoet/features/authencation/screens/onboarding/widgets/onboarding_pages.dart';
@@ -31,7 +31,7 @@ class OnBoardingScreen extends StatelessWidget {
             // sử dụng chỉ báo trang cập nhật của bộ điều khiển
             onPageChanged: controller.updatePageIndicator,
             children: const [
-              //Harizatal Scrollable Pages
+              // Harizatal Scrollable Pages
               OnBoardingPages(
                 images: TImages.onBoardingImage1,
                 title: TTexts.onBoardingTitle1,
@@ -48,17 +48,18 @@ class OnBoardingScreen extends StatelessWidget {
                 subTitle: TTexts.onBoardingSubTitle3,
               ),
 
-              //Skips Button
-              OnBoardingSkip(),
-
-              //Dot Navigation SmoothPageIndicator
-              // điều hướng dấu chấm mượt mà
-              OnBoardingDotNavigation(),
-
-              // Circular Button (nút vòng tròn next pages)
-              OnBoardingNextButton()
             ],
-          )
+          ),
+
+          //Skips Button
+         const OnBoardingSkip(),
+
+          //Dot Navigation SmoothPageIndicator
+          // điều hướng dấu chấm mượt mà
+          const OnBoardingDotNavigation(),
+
+          // Circular Button (nút vòng tròn next pages)
+          const OnBoardingNextButton()
         ],
       ),
     );

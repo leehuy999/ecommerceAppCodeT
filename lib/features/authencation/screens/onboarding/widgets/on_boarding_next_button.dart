@@ -1,4 +1,4 @@
-import 'package:ecommerceappcodoet/features/authencation/controllers/onboarding_controller.dart';
+import 'package:ecommerceappcodoet/features/authencation/controllers/onboarding/onboarding_controller.dart';
 import 'package:ecommerceappcodoet/utils/constants/colors.dart';
 import 'package:ecommerceappcodoet/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +14,7 @@ class OnBoardingNextButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     final dark = THelperFunctions.isDarkMode(context);
     return Positioned(
         right: TSize.defaultSpace,

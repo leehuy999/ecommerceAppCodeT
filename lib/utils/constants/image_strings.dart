@@ -10,9 +10,9 @@ class TImages {
   static const String facebook = "assets/logos/icon_facebook.png";
 
   //Onboarding images
-  static const String onBoardingImage1 = "assets/images/on_boarding_images/sammy-line-shopping.gif";
+  static const String onBoardingImage1 = "assets/images/on_boarding_images/sammy-line-delivering.gif";
   static const String onBoardingImage2 = "assets/images/on_boarding_images/sammy-line-searching.gif";
-  static const String onBoardingImage3 = "assets/images/on_boarding_images/sammy-line-delivering.gif";
+  static const String onBoardingImage3 = "assets/images/on_boarding_images/sammy-line-shopping.gif";
 
   //Animations
   static const String productsIllutration = "assets/images/animations/sammy-line-man-does-crossfit.png";

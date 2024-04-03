@@ -1,4 +1,4 @@
-import 'package:ecommerceappcodoet/features/authencation/controllers/onboarding_controller.dart';
+import 'package:ecommerceappcodoet/features/authencation/controllers/onboarding/onboarding_controller.dart';
 import 'package:ecommerceappcodoet/utils/constants/colors.dart';
 import 'package:ecommerceappcodoet/utils/constants/size.dart';
 import 'package:ecommerceappcodoet/utils/device/device_utility.dart';
@@ -21,9 +21,9 @@ class OnBoardingDotNavigation extends StatelessWidget {
         left: TSize.defaultSpace,
         // chỉ báo trang
         child: SmoothPageIndicator(
+          count: 3,
           controller: controller.pageController,
           onDotClicked: controller.dotNavigationClick,
-          count: 3,
           // hiệu ứng màu chuyển đổi theo cài đặt sáng tối
           effect: ExpandingDotsEffect(
               activeDotColor: dark ? TColors.light : TColors.dark,
