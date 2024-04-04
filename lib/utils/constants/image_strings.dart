@@ -14,6 +14,7 @@ class TImages {
   static const String onBoardingImage2 = "assets/images/on_boarding_images/sammy-line-searching.gif";
   static const String onBoardingImage3 = "assets/images/on_boarding_images/sammy-line-shopping.gif";
 
+
   //Animations
   static const String productsIllutration = "assets/images/animations/sammy-line-man-does-crossfit.png";
   static const String productsSaleIllutration = "assets/images/animations/sammy-line-lettering-flash-sale-with-a-man-carrying-gift-boxes-text.png";

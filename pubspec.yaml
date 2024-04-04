@@ -34,6 +34,7 @@ dependencies:
   # Utility Packages
   http: ^1.2.0
   intl: ^0.19.0
+  lottie: ^3.1.0
   logger: ^2.1.0
   url_launcher: ^6.2.5
   flutter_native_splash: ^2.3.11
