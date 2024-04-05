@@ -22,8 +22,11 @@ class TFullScreenLoader {
   //   -text:Văn bản sẽ được hiển thị trong hộp thoại tải
   //  - animation: hoạt ảnh xổ số sẽ được hiển thị
   static void openLoadingDialog (String text, String animation){
+    //hiển thị theo phương thức hộp thoại
     showDialog(context: Get.overlayContext!, // use the  Get.overlayContext for the dialogs
         barrierDismissible: false,// the dialog can't be dismissedby the tapping it /không thể loại bỏ hộp thoại bằng cách nhấn vào nó
+        // không  cho người duùng tự ý hủy, khi cửa sổ bật nên  người dùng bấm quay lại sẽ không bijhuyr
+        //  và không người dùng k nên chuyển màn hình trước hoặc có thể đóng ứng dụng
         builder: (_)=> PopScope(child: Container(
           color: THelperFunctions.isDarkMode(Get.context!)? TColors.dark : TColors.white,
           width: double.infinity,

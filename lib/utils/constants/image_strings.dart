@@ -72,4 +72,7 @@ class TImages {
   static const String productImage11 = "assets/images/products/laptop5.jpg";
   static const String productImage12 = "assets/images/products/latop2.jpg";
   static const String productImage13 = "";
+
+  //
+  static const String docerAnimation ='';
 }

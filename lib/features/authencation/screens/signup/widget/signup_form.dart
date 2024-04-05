@@ -77,7 +77,7 @@ class TSignupForm extends StatelessWidget {
             TextFormField(
               controller: controller.password,
               validator: (value) => TValidator.validatePassword(value),
-              obscureText: true,
+              obscureText: controller.hidePassword.value,// vẽ lại mk khi muốn xem
               decoration: const InputDecoration(
                 labelText: TTexts.password,
                 prefixIcon: Icon(Iconsax.password_check),
