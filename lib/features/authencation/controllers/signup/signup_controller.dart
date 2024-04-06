@@ -12,6 +12,7 @@ class SignupController extends GetxController{
 
 ///Variable
   final hidePassword = true.obs; //observable for hiding/Showing password/thay đổi vẽ lại khi muốn xem mk
+  final privacyPolicy = true.obs; //observable for privacy policy acceptance /thay đổi vẽ lại chấp nhận điều khoản
   final email = TextEditingController();
   final lastName = TextEditingController();
   final userName = TextEditingController();
@@ -36,6 +37,11 @@ class SignupController extends GetxController{
       if(!signupFormKey.currentState!.validate()) return;//// bắt buộc phải điền vào form thông tin
 
       /// Privacy Policy check
+      if(!privacyPolicy.value) {
+        TLoaders.warningSnackBar(title: 'Accept Privacy Policy',
+        messenge: 'In oder to create account, you must have to read and accept the Privacy Policy & Terms of Use');
+        return ;
+      }
       ///Register in the Firebase Authencation & save user data in the Firebase
       ///Save authencation user data in the Firebase FIreStorage
       ///Show Success Message

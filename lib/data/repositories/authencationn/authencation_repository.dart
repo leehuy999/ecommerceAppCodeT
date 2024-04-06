@@ -1,5 +1,6 @@
 import 'package:ecommerceappcodoet/features/authencation/screens/login/login.dart';
 import 'package:ecommerceappcodoet/features/authencation/screens/onboarding/onboarding.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -10,6 +11,7 @@ class AuthencationRepository extends GetxController{
   static AuthencationRepository get instance => Get.find();
 
   /// Variable
+  final _auth = FirebaseAuth.instance;git
 /// tạo biến lưu trữ
  final deviceStorage = GetStorage();
 

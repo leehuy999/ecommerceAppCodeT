@@ -21,7 +21,7 @@ Future<void> main() async {
   //Todo: Await Navtie Splash util other items load
   /// màn hình flash đợi cho đến khi xóa nó theo cách thủ công
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  //Todo: Initialize Firebase
+  //Todo: Initialize Fire base
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform).then(
