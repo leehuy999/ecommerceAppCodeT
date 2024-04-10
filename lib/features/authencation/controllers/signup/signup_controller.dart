@@ -1,3 +1,4 @@
+import 'package:ecommerceappcodoet/data/repositories/authencationn/authencation_repository.dart';
 import 'package:ecommerceappcodoet/utils/constants/image_strings.dart';
 import 'package:ecommerceappcodoet/utils/network/network_manager.dart';
 import 'package:ecommerceappcodoet/utils/popups/full_screen_loader.dart';
@@ -22,7 +23,7 @@ class SignupController extends GetxController{
   GlobalKey<FormState> signupFormKey = GlobalKey<FormState>();// khóa biểu mẫu để xác thưực biểu mẫu
 
 ///Sign Up
-  Future<void> signup() async{
+  void signup() async{
     try{
       ///Start loading
       TFullScreenLoader.openLoadingDialog('We are processing your information', TImages.docerAnimation);
@@ -43,7 +44,10 @@ class SignupController extends GetxController{
         return ;
       }
       ///Register in the Firebase Authencation & save user data in the Firebase
+      //goi bộ lưu trữ
+      final userCredental = await AuthencationRepository.instance.registerWithEmailAndPassword(email.text.trim(), password.text.trim());
       ///Save authencation user data in the Firebase FIreStorage
+      final newUser = UserModel
       ///Show Success Message
       ///Move to Verify Email Screen
     }
